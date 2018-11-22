@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_size">15sp</dimen>
+    <dimen name="medium_size">18sp</dimen>
+    <dimen name="large_size">25sp</dimen>
+    <dimen name="very_large_size">50sp</dimen>
+    <dimen name="text_number">30sp</dimen>
+    <dimen name="tiny_space">5dp</dimen>
+    <dimen name="small_space">10dp</dimen>
+    <dimen name="medium_space">15dp</dimen>
+    <dimen name="large_space">20dp</dimen>
+    <dimen name="circle_radius">50dp</dimen>
+    <dimen name="back_shape">250dp</dimen>
+    <dimen name="back_padding">40dp</dimen>
+    <dimen name="shape_size">120dp</dimen>
+    <dimen name="very_large_space">40dp</dimen>
+</resources>

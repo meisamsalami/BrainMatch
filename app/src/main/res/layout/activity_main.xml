@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.meisam.gamestwo.MainActivity">
+
+    <TextView
+        android:id="@+id/greeting"
+        android:text="@string/greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_space"
+        android:textSize="@dimen/large_size"
+        android:textColor="@android:color/black"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/select_game"
+        android:text="@string/select_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/medium_space"
+        android:textSize="@dimen/large_size"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/greeting"/>
+    <Button
+        android:id="@+id/witch_one_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/witch_one_launcher"
+        android:textSize="@dimen/medium_size"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_draw"
+        android:layout_marginTop="@dimen/very_large_space"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/select_game" />
+    <Button
+        android:id="@+id/speed_match_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/speed_match"
+        android:textSize="@dimen/medium_size"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_draw"
+        android:layout_marginTop="@dimen/medium_space"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="@id/witch_one_btn"
+        app:layout_constraintRight_toRightOf="@id/witch_one_btn"
+        app:layout_constraintTop_toBottomOf="@id/witch_one_btn" />
+
+    <Button
+        android:id="@+id/exit_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/exit"
+        android:textSize="@dimen/medium_size"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_draw"
+        android:layout_marginBottom="@dimen/very_large_space"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="@id/witch_one_btn"
+        app:layout_constraintRight_toRightOf="@id/witch_one_btn"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/fragment_witch_one_launcher"
+        android:elevation="@dimen/small_space"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/speed_match_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="@dimen/small_space"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
